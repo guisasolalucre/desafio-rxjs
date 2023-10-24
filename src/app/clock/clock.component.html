@@ -1,0 +1,14 @@
+<div class="container"
+    *ngIf="!loading; else loadingContent">
+    <p class="time">
+        {{ hour | number: '2.0-0' }} : 
+        {{ minute | number: '2.0-0' }} : 
+        {{ second | number: '2.0-0' }}
+    </p>
+
+    <p>{{ day }} de {{ month }} de {{ year }}</p>
+</div>
+
+<ng-template #loadingContent>
+    <p class="container">Cargando el reloj...</p>
+</ng-template>
