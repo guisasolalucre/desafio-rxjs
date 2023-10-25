@@ -1,0 +1,17 @@
+<div class="row">
+        <div class="col-4">
+                <p>Estas son Las Chicas Superpoderosas:</p>
+                <dl *ngFor="let girl of girls$ | async">
+                        <dt>{{girl.name}}</dt>
+                        <dd>Poder máximo: {{girl.strength}}</dd>
+                </dl>
+        </div>
+
+        <div class="col-4">
+                <p>El poder total de las tres es: {{totalStrength}}</p>
+                <p>Y las que tiene máximo poder son:</p>
+                <ul *ngFor="let girl of mostPowerful">
+                        <li>{{girl.name}}</li>
+                </ul>
+        </div>
+</div>

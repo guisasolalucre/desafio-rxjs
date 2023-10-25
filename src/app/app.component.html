@@ -1,9 +1,13 @@
-<button type="button" class="btn"
-        (click)="showClock = !showClock"
-        [ngClass]="showClock ? 'btn-danger' : 'btn-success'">
-    {{ showClock ? 'Ocultar reloj' : 'Mostrar reloj' }}
-</button>
+<div class="content">
+    <button class="btn"
+            (click)="showClock = !showClock"
+            [ngClass]="showClock ? 'btn-danger' : 'btn-success'">
+        {{ showClock ? 'Ocultar reloj' : 'Mostrar reloj' }}
+    </button>
 
-<div *ngIf="showClock">
-    <app-clock></app-clock>
+    <div *ngIf="showClock" class="clock">
+        <app-clock></app-clock>
+    </div>
 </div>
+
+<app-powerpuff-girls></app-powerpuff-girls>

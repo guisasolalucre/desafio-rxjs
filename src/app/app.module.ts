@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ClockComponent } from './clock/clock.component';
+import { PowerpuffGirlsComponent } from './powerpuff-girls/powerpuff-girls.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClockComponent
+    ClockComponent,
+    PowerpuffGirlsComponent
   ],
   imports: [
     BrowserModule

@@ -34,7 +34,10 @@ export class ClockComponent implements OnDestroy{
         this.year = now.getFullYear();
 
         this.loading = false;
-      }});
+      },
+      error: (err) => { console.log(err) },
+      complete: () => {}
+    });
   }
   ngOnDestroy(): void {
     this.clockSubscription.unsubscribe();
